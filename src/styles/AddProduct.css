@@ -1,0 +1,36 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-form input, select {
+    border: none;
+    border-bottom: 1px solid #393E46;
+    background: none;
+    padding: 5px 10px;
+    height: 50px;
+    width: 250px;
+}
+
+.product-form input:focus, select:focus {
+    outline: none;
+    border-bottom: 1px solid #FFD369;
+}
+
+.selected {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-message, .description {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #393E46;
+}
