@@ -35,13 +35,16 @@ const AddProduct=()=> {
 
     const handleSubmit=(event)=> {
         event.preventDefault();
-        axios.post("http://localhost/api/product/save", inputs)
+        axios.post("http://product-page.x10.mx/api/product/save", inputs)
         .then(response => {
             if(response.data.status === 0) {
                 setError(response.data.message);
             } else if (response.data.status === 1) {
                 navigate("/");
             }
+        })
+        .catch(error => {
+            console.log(error);
         })
     }
 

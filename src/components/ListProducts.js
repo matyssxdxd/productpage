@@ -15,7 +15,7 @@ const ListProducts=()=> {
     }, []);
 
     const getProducts=()=> {
-        axios.get("http://localhost/api/product/get")
+        axios.get("http://product-page.x10.mx/api/product/get")
         .then(response => {
             setProducts(response.data);
         })
@@ -32,7 +32,7 @@ const ListProducts=()=> {
     const massDelete=()=>{
         if(selected.length !== 0) {
             selected.forEach(id => {
-                axios.delete(`http://localhost/api/product/delete/${id}`)
+                axios.delete(`http://product-page.x10.mx/api/product/delete/${id}`)
                 .then(response=> {
                     console.log(response.data);
                     selected.pop(id);
