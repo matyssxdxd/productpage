@@ -35,7 +35,7 @@ const AddProduct=()=> {
 
     const handleSubmit=(event)=> {
         event.preventDefault();
-        axios.post("https://product-page.x10.mx/api/product/save", inputs)
+        axios.post("http://product-page.x10.mx/api/product/save", inputs)
         .then(response => {
             if(response.data.status === 0) {
                 setError(response.data.message);
