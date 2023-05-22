@@ -94,7 +94,7 @@ const AddProduct=()=> {
                         <div className="selected">
                             <input type="text" id="height" name="height" placeholder="Height" onChange={handleChange} />
                             <input type="text" id="width" name="width" placeholder="Width" onChange={handleChange} />
-                            <input type="text" id="lenght" name="length" placeholder="Length" onChange={handleChange} />
+                            <input type="text" id="length" name="length" placeholder="Length" onChange={handleChange} />
                             <p className="description">Please, provide dimensions</p>
                         </div>
                     ) : null}
