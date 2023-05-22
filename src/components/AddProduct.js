@@ -55,11 +55,11 @@ const AddProduct=()=> {
                     <h1>Product Add</h1>
                     <div className="nav-btn">
                         <button form="product_form">
-                            SAVE
+                            Save
                         </button>
                         <Link to="/">
                             <button>
-                                CANCEL
+                                Cancel
                             </button>
                         </Link>
                     </div>
