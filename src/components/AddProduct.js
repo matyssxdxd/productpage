@@ -73,7 +73,7 @@ const AddProduct=()=> {
                     <input type="text" id="sku" name="sku" placeholder="SKU" onChange={handleChange} />
                     <input type="text" id="name" name="name" placeholder="Name" onChange={handleChange} />
                     <input type="text" id="price" name="price" placeholder="Price" onChange={handleChange} />
-                    <select value={selected} name="type" onChange={handleType}>
+                    <select value={selected} id="productType" name="type" onChange={handleType}>
                         {options.map(option => (
                             <option key={option.value} value={option.value}>
                                 {option.text}

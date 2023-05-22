@@ -55,7 +55,7 @@ const ListProducts=()=> {
                             </button>
                         </Link>
                         <button onClick={massDelete}>
-                            DELETE
+                            MASS DELETE
                         </button>
                     </div>
                 </div>

@@ -40,6 +40,7 @@ body {
     background-color: #393E46;
     color: #EEEEEE;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .nav-btn button:hover {
