@@ -62,11 +62,11 @@ const ListProducts=()=> {
             </div>
             <div className="item-container">
             {products && products.length > 0 ? ( products.map((product) => {
-                    return product.type === "dvd" ? 
+                    return product.type === "DVD" ? 
                          <Item key={product.sku} type={product.type} sku={product.sku} name={product.name} price={product.price} size={product.size} onChange={handleItemChange} /> :
-                        product.type === "book" ? 
+                        product.type === "Book" ? 
                         <Item key={product.sku} type={product.type} sku={product.sku} name={product.name} price={product.price} weight={product.weight} onChange={handleItemChange} /> :
-                        product.type === "furniture" ?
+                        product.type === "Furniture" ?
                         <Item key={product.sku} type={product.type} sku={product.sku} name={product.name} price={product.price} height={product.height} width={product.width} length={product.length} onChange={handleItemChange} /> :
                         null;
                 })) : null}

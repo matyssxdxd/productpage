@@ -13,15 +13,15 @@ const Item=(props)=> {
             <p>{props.sku}</p>
             <p>{props.name}</p>
             <p>{props.price}$</p>
-            {props.type === "dvd" ? (
+            {props.type === "DVD" ? (
                 <div className="attributes">
                     <p>Size: {props.size} MB</p>
                 </div>
-            ) : props.type === "book" ? (
+            ) : props.type === "Book" ? (
                 <div className="attributes">
                     <p>Weight: {props.weight} KG</p>
                 </div>
-            ) : props.type  === "furniture" ? (
+            ) : props.type  === "Furniture" ? (
                 <div className="attributes">
                     <p>Dimensions: {props.height}x{props.width}x{props.length}</p>
                 </div>
